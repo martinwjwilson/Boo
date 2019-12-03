@@ -1,5 +1,6 @@
 # Don't track content of these folders
 _pycache_/
+env/
 venv/
 
 

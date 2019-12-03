@@ -14,26 +14,26 @@ class member_moderation(commands.Cog):
 
     # conversion to seconds for use with unix epoch ie time()
     def convtime(self, toconv):
-    numstr = ""
-    for i in range(0, len(toconv)):
-        if toconv[i].isdigit():
-            numstr = numstr + toconv[i]
-    if toconv.endswith("s"): # seconds
-        num = int(numstr)
-    elif toconv.endswith("m"): # minutes
-        num = int(numstr) * 60
-    elif toconv.endswith("h"): # hours
-        num = int(numstr) * (60^2)
-    elif toconv.endswith("d"): # days
-        num = int(numstr) * 24 * (60^2)
-    elif toconv.endswith("w"): # weeks
-        num = int(numstr) * 7 * 24 * (60^2)
-    elif toconv.endswith("M"): # months
-        num = int(numstr) * 30 * 24 * (60^2)
-    elif toconv.endswith("y"): # years
-        num = int(numstr) * 365 * 24 * (60^2)
-    return num
-    
+        numstr = ""
+        for i in range(0, len(toconv)):
+            if toconv[i].isdigit():
+                numstr = numstr + toconv[i]
+        if toconv.endswith("s"): # seconds
+            num = int(numstr)
+        elif toconv.endswith("m"): # minutes
+            num = int(numstr) * 60
+        elif toconv.endswith("h"): # hours
+            num = int(numstr) * (60^2)
+        elif toconv.endswith("d"): # days
+            num = int(numstr) * 24 * (60^2)
+        elif toconv.endswith("w"): # weeks
+            num = int(numstr) * 7 * 24 * (60^2)
+        elif toconv.endswith("M"): # months
+            num = int(numstr) * 30 * 24 * (60^2)
+        elif toconv.endswith("y"): # years
+            num = int(numstr) * 365 * 24 * (60^2)
+        return num
+
     # used to create the base record
     def createRecord(self, ctx, member, isMuted=0, timer=0, muteReason='None', warnings=0):
         with open('records.json') as f:
@@ -60,7 +60,7 @@ class member_moderation(commands.Cog):
             for member in gmem:
                 self.createRecord(ctx, member)
             await ctx.send("done")
-    
+
     @commands.command(hidden = True)
     @commands.has_role(config.role_dict.get("admin"))
     async def record(self, ctx, message=None):
@@ -88,8 +88,8 @@ class member_moderation(commands.Cog):
                 embed.set_thumbnail(url=member.avatar_url)
                 embed.add_field(name="isMuted:", value=user['isMuted'], inline=False)
                 embed.add_field(name="Warnings:", value=user['warnings'], inline=False)
-    
-    
+
+
     # verify command
     @commands.command(hidden = True)
     async def verify(self, ctx):
