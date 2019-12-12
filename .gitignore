@@ -1,12 +1,12 @@
 # Don't track content of these folders
 _pycache_/
 env/
-venv/
+.vscode/
+.DS_Store
 
 
 # Don't track these files
 token.json
-
 
 # Compiled source #
 ###################

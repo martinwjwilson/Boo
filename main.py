@@ -10,7 +10,7 @@ with open("token.json", 'r') as f:
     token = json.load(f)['TOKEN']
 
 bot = commands.Bot(command_prefix = "/")
-extensions = ["chat_mod","fun","logs","member_mod","update","mod_tasks"] # list of cogs to call
+extensions = ["chat_mod","fun","logs","member_mod","update","mod_tasks", "music"] # list of cogs to call
 
 
 @bot.event
