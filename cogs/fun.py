@@ -28,6 +28,7 @@ class Fun(commands.Cog):
 
 
     @commands.command()
+    @commands.case_insensitive(True)
     async def uwu(self, ctx, *, message):
         uwufied = Fun.uwufication(message)
         await ctx.message.delete()
