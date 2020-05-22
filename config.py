@@ -13,7 +13,7 @@ channel_dict = {
 # ROLES
 role_dict = {
     # users
-    "admin"                             : 513197401423740928,
+    "admin"                             : 697361363198017586,
     "red_panda"                         : 554470167002873904,
     "Muted"                             : 550179333218500639,
 
