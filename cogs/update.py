@@ -43,11 +43,11 @@ class update(commands.Cog):
 
         # update the roles channel for autoroles
         embed1 = discord.Embed(title=f"Roles!", description=f"React to obtain the following roles:", color=0xaf68c9) # set up embed
-        embed1.add_field(name = f"\u200b", value = f"""Sub Freak {config.sub_emoji_id}\n
-            Dub Peasant {config.dub_emoji_id}\n
-            Seasonal {config.seasonal_emoji_id}\n
-            Roulette {config.roulette_emoji_id}\n
-            Lewd {config.lewd_emoji_id}\n""", inline=False)
+        embed1.add_field(name = f"\u200b", value = f"""Sub Freak {config.role_dict["sub_emoji_id"]}\n
+            Dub Peasant {config.role_dict["dub_emoji_id"]}\n
+            Seasonal {config.role_dict["seasonal_emoji_id"]}\n
+            Roulette {config.role_dict["roulette_emoji_id"]}\n
+            Lewd {config.role_dict["lewd_emoji_id"]}\n""", inline=False)
         channel_roles = await channel.send(embed=embed1)
         # add the emojis to react with
         await channel_roles.add_reaction(config.sub_emoji_id)
