@@ -57,40 +57,40 @@ class update(commands.Cog):
         await channel_roles.add_reaction(config.lewd_emoji_id)
 
         # coloured roles
-        embed2 = discord.Embed(title=f"Roles!", description=f"React to obtain the following roles:", color=0xaf68c9) # set up embed
-        embed2.add_field(name = f"\u200b", value = f"""Blue {config.blue_emoji_id}\n
-            Black {config.black_emoji_id}\n
-            Yellow {config.yellow_emoji_id}\n
-            Pink {config.pink_emoji_id}\n
-            Red {config.red_emoji_id}\n
-            White {config.white_emoji_id}\n
-            Orange {config.orange_emoji_id}\n
-            Green {config.green_emoji_id}\n
-            Purple {config.purple_emoji_id}\n""", inline=False)
-        channel_roles = await channel.send(embed=embed2)
-        # add the emojis to react with
-        await channel_roles.add_reaction(config.blue_emoji_id)
-        await channel_roles.add_reaction(config.black_emoji_id)
-        await channel_roles.add_reaction(config.yellow_emoji_id)
-        await channel_roles.add_reaction(config.pink_emoji_id)
-        await channel_roles.add_reaction(config.red_emoji_id)
-        await channel_roles.add_reaction(config.white_emoji_id)
-        await channel_roles.add_reaction(config.orange_emoji_id)
-        await channel_roles.add_reaction(config.green_emoji_id)
-        await channel_roles.add_reaction(config.purple_emoji_id)
+        # embed2 = discord.Embed(title=f"Roles!", description=f"React to obtain the following roles:", color=0xaf68c9) # set up embed
+        # embed2.add_field(name = f"\u200b", value = f"""Blue {config.blue_emoji_id}\n
+        #     Black {config.black_emoji_id}\n
+        #     Yellow {config.yellow_emoji_id}\n
+        #     Pink {config.pink_emoji_id}\n
+        #     Red {config.red_emoji_id}\n
+        #     White {config.white_emoji_id}\n
+        #     Orange {config.orange_emoji_id}\n
+        #     Green {config.green_emoji_id}\n
+        #     Purple {config.purple_emoji_id}\n""", inline=False)
+        # channel_roles = await channel.send(embed=embed2)
+        # # add the emojis to react with
+        # await channel_roles.add_reaction(config.blue_emoji_id)
+        # await channel_roles.add_reaction(config.black_emoji_id)
+        # await channel_roles.add_reaction(config.yellow_emoji_id)
+        # await channel_roles.add_reaction(config.pink_emoji_id)
+        # await channel_roles.add_reaction(config.red_emoji_id)
+        # await channel_roles.add_reaction(config.white_emoji_id)
+        # await channel_roles.add_reaction(config.orange_emoji_id)
+        # await channel_roles.add_reaction(config.green_emoji_id)
+        # await channel_roles.add_reaction(config.purple_emoji_id)
 
         # seasonal roles
-        embed1 = discord.Embed(title=f"Roles!", description=f"React to obtain the following roles:", color=0xaf68c9) # set up embed
-        embed1.add_field(name = f"\u200b", value = f"""Virgin Succubus {config.succubus_emoji_id}\n
-            Skeletal Ruler {config.skeletal_emoji_id}\n
-            Loli Vampire {config.vampire_emoji_id}\n
-            Elfen Twins {config.twins_emoji_id}""", inline=False)
-        channel_roles = await channel.send(embed=embed1)
-        # add the emojis to react with
-        await channel_roles.add_reaction(config.succubus_emoji_id)
-        await channel_roles.add_reaction(config.skeletal_emoji_id)
-        await channel_roles.add_reaction(config.vampire_emoji_id)
-        await channel_roles.add_reaction(config.twins_emoji_id)
+        # embed1 = discord.Embed(title=f"Roles!", description=f"React to obtain the following roles:", color=0xaf68c9) # set up embed
+        # embed1.add_field(name = f"\u200b", value = f"""Virgin Succubus {config.succubus_emoji_id}\n
+        #     Skeletal Ruler {config.skeletal_emoji_id}\n
+        #     Loli Vampire {config.vampire_emoji_id}\n
+        #     Elfen Twins {config.twins_emoji_id}""", inline=False)
+        # channel_roles = await channel.send(embed=embed1)
+        # # add the emojis to react with
+        # await channel_roles.add_reaction(config.succubus_emoji_id)
+        # await channel_roles.add_reaction(config.skeletal_emoji_id)
+        # await channel_roles.add_reaction(config.vampire_emoji_id)
+        # await channel_roles.add_reaction(config.twins_emoji_id)
 
 
 def setup(bot):
