@@ -6,6 +6,7 @@ import utils
 import users
 import config
 import logging
+import time
 
 
 class member_moderation(commands.Cog):
