@@ -49,7 +49,7 @@ class update(commands.Cog):
 
             Strikes will be given to members by admin discretion. 3 Strike Limit. Good Behavior over time can result in strike removal.\n\n
 
-            If you accept these Guidelines type “/verify” in #verify"""
+            If you accept these Guidelines type “/verify” in #verify""")
         await ctx.send(embed=embed)
 
 
