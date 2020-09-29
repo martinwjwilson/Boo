@@ -38,13 +38,12 @@ class update(commands.Cog):
             6.) No dangerous & shortened links.\n
               6.1) Example: Bit.ly , Goo.gl , ad.fy ect , Ip logging domains.\n\n
 
-            7.) Racism & degrading behavior is not acceptable. (Admins reserve the right to bypass strikes
-                And remove the offender if they deem fit.)\n\n
+            7.) Racism & degrading behavior is not acceptable. (Admins reserve the right to bypass strikes and remove the offender if they deem fit.)\n\n
 
             8.) Be respectful to all users and staff\n\n
 
             9.) Admins Reserve the right to delete messages & remove members if they see fit.\n
-              9.1) This will not be abused, Admins will remove messages that are not appropriate for the
+               9.1) This will not be abused, Admins will remove messages that are not appropriate for the
                      Channel / Server / Topic.\n\n
 
             Strikes will be given to members by admin discretion. 3 Strike Limit. Good Behavior over time can result in strike removal.\n\n
