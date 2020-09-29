@@ -14,18 +14,42 @@ class update(commands.Cog):
     async def update_rules(self, ctx):
         # update the rules channel with any updates
         lewd_role = ctx.guild.get_role(513436281523404825)
-        embed = discord.Embed(title=f"-Zer0 Server Community Guidelines-", description=f"""1. No Advertising & Self Promoting of any kind.\n
-            2. Spamming is not allowed.\n
-            3. Do not ask to become staff.\n
-            4. No mass mentions.\n
-            5. No unicode / blank names. (Visable / Pingable Unicode names are allowed.)\n
-            6. No dangerous & shortened links.\n
-            7. Racism & degrading behavior is not acceptable.\n\n
-            Channel Rules of Use are in all channel descriptions.""", color=0xaf68c9) # set up embed
-        embed.add_field(name = "TO VERIFY USE THE COMMAND", value = f"/verify", inline = False)
-        embed.add_field(name = "ROLES", value = f"You can grab yourself a Color Role and Identifer Roles in <#{config.channel_dict.get('auto_role')}>. Lewd and Roulette Gives you access to there respective channels.", inline = False)
-        embed.add_field(name = "WARNINGS", value = f"All users have a 3 Strike warning. Admins can bypass this and Choose to ban a user if they see fit.\naka Obvious Trolling/Bot accounts.", inline = False)
-        embed.add_field(name = "WAIFU ROULETTE", value = f"<#{config.channel_dict.get('waifu_roulette')}> Harems will reset every 6 Months.\n\nThe Score leader Board will be posted in <#{config.channel_dict.get('announcements')}> at the end of every round and recive a uniqe role.", inline = False)
+        embed = discord.Embed(title=f"-Zer0 Server Community Guidelines-", description=f"""-Zer0 Server Community Guidelines-\n\n
+
+            1.) No Advertising & Self Promoting of any kind.\n
+              1.1) This Includes DMs or asking others to advertise in your place.\n\n
+
+            2.) Spamming is not allowed. (enforced by admin discretion)\n
+              2.1) Mass Image Drops in channels NSFW Channels, Offtopic, Art & Character Art are
+                    exceptions to rule 2.\n\n
+
+            3.) Do not ask to become staff.\n\n
+
+            4.) No mass mentions.\n
+              4.1) This includes mentioning staff. If you are not sure which staff to ping for a problem Ping
+                     Administrator role. \n\n
+
+            5.) No unicode / blank names. (Visible / Pingable Unicode names are allowed.)\n
+               5.1) Names using “The longest single Character” are not allowed.\n
+               5.2) Advertising in names & Status are not allowed.\n
+               5.3) NSFW & Vulgar Names Are not allowed (enforced by admin discretion)\n
+                 5.3.1) Admins reserve the right to Change your nickname in server.\n\n
+
+            6.) No dangerous & shortened links.\n
+              6.1) Example: Bit.ly , Goo.gl , ad.fy ect , Ip logging domains.\n\n
+
+            7.) Racism & degrading behavior is not acceptable. (Admins reserve the right to bypass strikes
+                And remove the offender if they deem fit.)\n\n
+
+            8.) Be respectful to all users and staff\n\n
+
+            9.) Admins Reserve the right to delete messages & remove members if they see fit.\n
+              9.1) This will not be abused, Admins will remove messages that are not appropriate for the
+                     Channel / Server / Topic.\n\n
+
+            Strikes will be given to members by admin discretion. 3 Strike Limit. Good Behavior over time can result in strike removal.\n\n
+
+            If you accept these Guidelines type “/verify” in #verify"""
         await ctx.send(embed=embed)
 
 
