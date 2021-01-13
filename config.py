@@ -25,7 +25,7 @@ purple_emoji_id = "<:Purple:621119170985197588>"
 role_dict = {
     # users
     "admin"                             : 697361363198017586,
-    "red_panda"                         : 554470167002873904,
+    "red_panda"                         : 697361363198017586,
     "Muted"                             : 697361363147685914,
 
     #auto role
