@@ -20,14 +20,12 @@ class update(commands.Cog):
               1.1) This Includes DMs or asking others to advertise in your place.\n\n
 
             2.) Spamming is not allowed. (enforced by admin discretion)\n
-              2.1) Mass Image Drops in channels NSFW Channels, Offtopic, Art & Character Art are
-                    exceptions to rule 2.\n\n
+              2.1) Mass Image Drops in channels NSFW Channels, Offtopic, Art & Character Art are exceptions to rule 2.\n\n
 
             3.) Do not ask to become staff.\n\n
 
             4.) No mass mentions.\n
-              4.1) This includes mentioning staff. If you are not sure which staff to ping for a problem Ping
-                     Administrator role. \n\n
+              4.1) This includes mentioning staff. If you are not sure which staff to ping for a problem Ping Administrator role. \n\n
 
             5.) No unicode / blank names. (Visible / Pingable Unicode names are allowed.)\n
                5.1) Names using “The longest single Character” are not allowed.\n
